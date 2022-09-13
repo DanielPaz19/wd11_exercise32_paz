@@ -21,8 +21,8 @@ function App() {
         <div className="text-light fs-4 me-4">Manga List</div>
       </header>
       <div
-        id="hero"
-        className="container-fuild bg-light d-flex justify-content-center align-items-center"
+        id="heroDesktop"
+        className="container-fuild bg-light d-md-flex justify-content-center align-items-center d-none "
       >
         <HeroImage src={relife} href={"1"} />
         <HeroImage src={punpun} href={"3"} />
@@ -31,10 +31,28 @@ function App() {
         <HeroImage src={shigatsu} href={"5"} />
       </div>
 
+      <div id="heroMobile">
+        <div
+          className="main-carousel "
+          data-flickity='{"cellAlign": "left", "contain": true, "autoPlay":" true}'
+        >
+          <div className="carousel-cell">
+            <img src={punpun} alt="" />
+          </div>
+          <div className="carousel-cell">
+            <img src={nhk} alt="" />
+          </div>
+          <div className="carousel-cell">
+            <img src={shigatsu} alt="" />
+          </div>
+          ...
+        </div>
+      </div>
+
       <div id="about" className="container-fluid bg-primary">
-        <div className="container p-5">
+        <div className="container py-5">
           <div className="row">
-            <div className="col-6">
+            <div className="col-md-6 col-12">
               <h2 className="text-light fw-bolder text-center pt-3">
                 What is <span className="text-secondary">Manga?</span>{" "}
               </h2>
@@ -48,7 +66,7 @@ function App() {
                 releases.
               </p>
             </div>
-            <div className="col-6">
+            <div className="col-md-6 col-12">
               <img src={manga} alt="" className="about-img" />
             </div>
           </div>
@@ -115,39 +133,43 @@ function App() {
         />
       </div>
       <div id="comment" className="bg-primary container-fluid">
-        <div className="container text-center w-50 py-5">
+        <div className="container text-center py-5">
           <h3 className=" fw-bold   text-secondary">Comments / Suggestions</h3>
           <h6 className="text-light">Thank you for your feedback!</h6>
-          <form action="" className="pt-4">
-            <div class="form-floating mb-2 ">
-              <input
-                type="text"
-                className="form-control"
-                id="floatingInput"
-                placeholder="Full Name"
-              />
-              <label for="floatingInput">Full Name</label>
-            </div>
-            <div className="form-floating mb-2">
-              <input
-                type="email"
-                className="form-control"
-                id="floatingPassword"
-                placeholder="Email"
-              />
-              <label for="floatingPassword">Email</label>
-            </div>
-            <div className="form-floating">
-              <textarea
-                className="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea"
-                rows="100"
-              ></textarea>
-              <label for="floatingTextarea">Comments</label>
-            </div>
-            <button className="btn btn-light mt-3 fw-bold">Submit</button>
-          </form>
+          <div className="row">
+            <div className="col-md-3 "></div>
+            <form action="" className="pt-4 col-md-6 col-12">
+              <div class="form-floating mb-2 ">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="Full Name"
+                />
+                <label for="floatingInput">Full Name</label>
+              </div>
+              <div className="form-floating mb-2">
+                <input
+                  type="email"
+                  className="form-control"
+                  id="floatingPassword"
+                  placeholder="Email"
+                />
+                <label for="floatingPassword">Email</label>
+              </div>
+              <div className="form-floating">
+                <textarea
+                  className="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"
+                  rows="100"
+                ></textarea>
+                <label for="floatingTextarea">Comments</label>
+              </div>
+              <button className="btn btn-light mt-3 fw-bold">Submit</button>
+            </form>
+            <div className="col-md-3 "></div>
+          </div>
         </div>
       </div>
       <div

@@ -10,12 +10,18 @@ function Content({ src, orderReverse, paragraph, title, author, id }) {
     >
       <div className="container">
         <div className=" row">
-          <div className={`col-5 text-center ${orderReverse ? "order-2" : ""}`}>
+          <div
+            className={`col-md-5 col-12 text-center ${
+              orderReverse ? "order-md-2" : ""
+            }`}
+          >
             <img src={src} alt="" className="content-img img-thumbnail" />
           </div>
           <div
-            className={`col-7 pt-4  ${
-              orderReverse ? "order-1 text-end" : "text-start text-primary"
+            className={`col-md-7 col-12 pt-4  ${
+              orderReverse
+                ? "order-md-1 text-md-end text-center"
+                : "text-md-start text-center text-primary"
             }`}
           >
             <h1 className={`fw-bolder ${orderReverse ? "text-secondary" : ""}`}>
