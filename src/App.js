@@ -22,30 +22,58 @@ function App() {
       </header>
       <div
         id="heroDesktop"
-        className="container-fuild bg-light d-md-flex justify-content-center align-items-center d-none "
+        className="container-fuild bg-light d-none d-md-flex "
       >
-        <HeroImage src={relife} href={"1"} />
-        <HeroImage src={punpun} href={"3"} />
-        <HeroImage src={nhk} href={"2"} />
-        <HeroImage src={koeNoKatachi} href={"4"} />
-        <HeroImage src={shigatsu} href={"5"} />
+        <div className="container d-md-flex justify-content-center align-items-center position-relative">
+          <HeroImage src={relife} href={"1"} />
+          <HeroImage src={punpun} href={"3"} />
+          <HeroImage src={nhk} href={"2"} />
+          <HeroImage src={koeNoKatachi} href={"4"} />
+          <HeroImage src={shigatsu} href={"5"} />
+        </div>
       </div>
 
-      <div id="heroMobile">
+      <div id="heroMobile" className="d-md-none d-block">
         <div
-          className="main-carousel "
-          data-flickity='{"cellAlign": "left", "contain": true, "autoPlay":" true}'
+          id="carouselExampleControls"
+          className="carousel slide"
+          data-bs-ride="carousel"
         >
-          <div className="carousel-cell">
-            <img src={punpun} alt="" />
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={punpun} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src={shigatsu} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src={nhk} className="d-block w-100" alt="..." />
+            </div>
           </div>
-          <div className="carousel-cell">
-            <img src={nhk} alt="" />
-          </div>
-          <div className="carousel-cell">
-            <img src={shigatsu} alt="" />
-          </div>
-          ...
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 

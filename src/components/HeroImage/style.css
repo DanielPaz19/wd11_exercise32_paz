@@ -12,3 +12,8 @@
   filter: none;
   width: 250px;
 }
+
+.hero-img.active {
+  filter: none;
+  width: 250px;
+}

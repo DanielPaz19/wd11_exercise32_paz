@@ -6,6 +6,11 @@ header {
 #heroDesktop {
   padding-top: 60px;
   height: 100vh;
+  max-height: 600px;
+}
+
+#heroMobile {
+  padding-top: 60px;
 }
 
 /* #about {
@@ -27,4 +32,9 @@ header {
 
 #footer i {
   margin: auto 10px;
+}
+
+.btn-prev,
+.btn-next {
+  cursor: pointer;
 }
