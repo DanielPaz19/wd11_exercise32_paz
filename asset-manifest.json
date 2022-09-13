@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/wd11_exercise32_paz/static/css/main.6ea5dd65.css",
+    "main.js": "/wd11_exercise32_paz/static/js/main.3135d115.js",
+    "static/js/787.fea023af.chunk.js": "/wd11_exercise32_paz/static/js/787.fea023af.chunk.js",
+    "static/media/koe-no-katachi.jpg": "/wd11_exercise32_paz/static/media/koe-no-katachi.7b10287e64f79df63109.jpg",
+    "static/media/manga.jpg": "/wd11_exercise32_paz/static/media/manga.2b6c002aac0b94aa91a9.jpg",
+    "static/media/oyasumi-punpun.jpg": "/wd11_exercise32_paz/static/media/oyasumi-punpun.bda30487960a2f2d2f00.jpg",
+    "static/media/welcome-to-nhk.jpg": "/wd11_exercise32_paz/static/media/welcome-to-nhk.8e466e6092e12a0800c4.jpg",
+    "static/media/shigatsu-wa-kimi-no-uso.jpg": "/wd11_exercise32_paz/static/media/shigatsu-wa-kimi-no-uso.9d8b4d2367f99aa97aae.jpg",
+    "static/media/relife.jpg": "/wd11_exercise32_paz/static/media/relife.412aba61b7c1569fa977.jpg",
+    "index.html": "/wd11_exercise32_paz/index.html",
+    "main.6ea5dd65.css.map": "/wd11_exercise32_paz/static/css/main.6ea5dd65.css.map",
+    "main.3135d115.js.map": "/wd11_exercise32_paz/static/js/main.3135d115.js.map",
+    "787.fea023af.chunk.js.map": "/wd11_exercise32_paz/static/js/787.fea023af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ea5dd65.css",
+    "static/js/main.3135d115.js"
+  ]
+}
