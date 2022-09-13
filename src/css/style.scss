@@ -1,0 +1,17 @@
+$primary: #171219;
+$secondary: #ced38a;
+$light: #f2fbeb;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Comic Neue", cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

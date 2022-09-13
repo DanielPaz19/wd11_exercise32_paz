@@ -1,0 +1,14 @@
+.hero-img {
+  border-radius: 10px;
+  width: 12em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: auto 5px;
+  filter: grayscale();
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-img:hover {
+  filter: none;
+  width: 250px;
+}
